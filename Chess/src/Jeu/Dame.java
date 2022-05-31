@@ -135,8 +135,114 @@ public class Dame{
 							}
 						}
 						else if (posy == y2) {
-							if (board.board[posy][posx].charAt(1) == 'N') {
-								supp.SupprimerPieceN(board, posy, posx);
+							if (board.board[posy][posx].charAt(1) == 'B') {
+								supp.SupprimerPieceB(board, posy, posx);
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.yDame += ((y - posy) * 90);
+								valide = false;
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(board,  "coup invalide");
+							valide = false;
+						}
+					}
+				}
+			}
+			else {
+				if(x < x2 && y == y2) {
+					while (valide) {
+						posx++;
+						if (board.board[posy][posx] == "0") {
+							if (posx == x2) {
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.xDame += ((posx - x) * 90);
+								valide = false;
+							}
+						}
+						else if (posx == x2) {
+							if (board.board[posy][posx].charAt(1) == 'B') {
+								supp.SupprimerPieceB(board, posy, posx);
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.xDame += ((posx - x) * 90);
+								valide = false;
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(board,  "coup invalide");
+							valide = false;
+						}
+					}
+				}
+				else if (x > x2 && y == y2) {
+					while (valide) {
+						posx--;
+						if (board.board[posy][posx] == "0") {
+							if (posx == x2) {
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.xDame -= ((x - posx) * 90);
+								valide = false;
+							}
+						}
+						else if (posx == x2) {
+							if (board.board[posy][posx].charAt(1) == 'B') {
+								supp.SupprimerPieceB(board, posy, posx);
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.xDame -= ((x - posx) * 90);
+								valide = false;
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(board,  "coup invalide");
+							valide = false;
+						}
+					}
+				}
+				else if (x == x2 && y < y2) {
+					while (valide) {
+						posy++;
+						if (board.board[posy][posx] == "0") {
+							if (posy == y2) {
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.yDame -= ((posy - y) * 90);
+								valide = false;
+							}
+						}
+						else if (posy == y2) {
+							if (board.board[posy][posx].charAt(1) == 'B') {
+								supp.SupprimerPieceB(board, posy, posx);
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.yDame -= ((posy - y) * 90);
+								valide = false;
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(board,  "coup invalide");
+							valide = false;
+						}
+					}
+				}
+				else {
+					while (valide) {
+						posy--;
+						if (board.board[posy][posx] == "0") {
+							if (posy == y2) {
+								board.board[y][x] = "0";
+								board.board[posy][posx] = this.name;
+								this.yDame += ((y - posy) * 90);
+								valide = false;
+							}
+						}
+						else if (posy == y2) {
+							if (board.board[posy][posx].charAt(1) == 'B') {
+								supp.SupprimerPieceB(board, posy, posx);
 								board.board[y][x] = "0";
 								board.board[posy][posx] = this.name;
 								this.yDame += ((y - posy) * 90);

@@ -94,53 +94,282 @@ public class Correspondance {
 			
 		// déplacement si un pion
 		case "pN1":
-			board.pN1.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN1.upgrade.equals("dame")) {
+				board.pN1.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN1.upgrade.equals("cavalier")) {
+				board.pN1.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN1.upgrade.equals("fou")) {
+				board.pN1.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN1.upgrade.equals("tour")) {
+				board.pN1.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN1.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN2":
-			board.pN2.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN2.upgrade.equals("dame")) {
+				board.pN2.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN2.upgrade.equals("cavalier")) {
+				board.pN2.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN2.upgrade.equals("fou")) {
+				board.pN2.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN2.upgrade.equals("tour")) {
+				board.pN2.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN2.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN3":
-			board.pN3.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN3.upgrade.equals("dame")) {
+				board.pN3.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN3.upgrade.equals("cavalier")) {
+				board.pN3.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN3.upgrade.equals("fou")) {
+				board.pN3.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN3.upgrade.equals("tour")) {
+				board.pN3.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN3.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN4":
-			board.pN4.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN4.upgrade.equals("dame")) {
+				board.pN4.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN4.upgrade.equals("cavalier")) {
+				board.pN4.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN4.upgrade.equals("fou")) {
+				board.pN4.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN4.upgrade.equals("tour")) {
+				board.pN4.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN4.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN5":
-			board.pN5.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN5.upgrade.equals("dame")) {
+				board.pN5.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN5.upgrade.equals("cavalier")) {
+				board.pN5.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN5.upgrade.equals("fou")) {
+				board.pN5.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN5.upgrade.equals("tour")) {
+				board.pN5.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN5.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN6":
-			board.pN6.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN6.upgrade.equals("dame")) {
+				board.pN6.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN6.upgrade.equals("cavalier")) {
+				board.pN6.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN6.upgrade.equals("fou")) {
+				board.pN6.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN6.upgrade.equals("tour")) {
+				board.pN6.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN6.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN7":
-			board.pN7.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN7.upgrade.equals("dame")) {
+				board.pN7.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN7.upgrade.equals("cavalier")) {
+				board.pN7.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN7.upgrade.equals("fou")) {
+				board.pN7.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN7.upgrade.equals("tour")) {
+				board.pN7.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN7.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pN8":
-			board.pN8.DeplacerPion(board, x, y, x2, y2);
+			if (board.pN8.upgrade.equals("dame")) {
+				board.pN8.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pN8.upgrade.equals("cavalier")) {
+				board.pN8.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pN8.upgrade.equals("fou")) {
+				board.pN8.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pN8.upgrade.equals("tour")) {
+				board.pN8.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pN8.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 			
 		case "pB1":
-			board.pB1.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB1.upgrade.equals("dame")) {
+				board.pB1.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB1.upgrade.equals("cavalier")) {
+				board.pB1.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB1.upgrade.equals("fou")) {
+				board.pB1.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB1.upgrade.equals("tour")) {
+				board.pB1.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB1.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB2":
-			board.pB2.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB2.upgrade.equals("dame")) {
+				System.out.print(board.pB2.upgrade);
+				board.pB2.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB2.upgrade.equals("cavalier")) {
+				System.out.print(board.pB2.upgrade);
+				board.pB2.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB2.upgrade.equals("fou")) {
+				System.out.print(board.pB2.upgrade);
+				board.pB2.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB2.upgrade.equals("tour")) {
+				System.out.print(board.pB2.upgrade);
+				board.pB2.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				System.out.print(board.pB2.upgrade);
+				board.pB2.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB3":
-			board.pB3.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB3.upgrade.equals("dame")) {
+				board.pB3.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB3.upgrade.equals("cavalier")) {
+				board.pB3.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB3.upgrade.equals("fou")) {
+				board.pB3.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB3.upgrade.equals("tour")) {
+				board.pB3.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB3.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB4":
-			board.pB4.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB4.upgrade.equals("dame")) {
+				board.pB4.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB4.upgrade.equals("cavalier")) {
+				board.pB4.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB4.upgrade.equals("fou")) {
+				board.pB4.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB4.upgrade.equals("tour")) {
+				board.pB4.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB4.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB5":
-			board.pB5.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB5.upgrade.equals("dame")) {
+				board.pB5.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB5.upgrade.equals("cavalier")) {
+				board.pB5.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB5.upgrade.equals("fou")) {
+				board.pB5.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB5.upgrade.equals("tour")) {
+				board.pB5.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB5.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB6":
-			board.pB6.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB6.upgrade.equals("dame")) {
+				board.pB6.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB6.upgrade.equals("cavalier")) {
+				board.pB6.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB6.upgrade.equals("fou")) {
+				board.pB6.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB6.upgrade.equals("tour")) {
+				board.pB6.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB6.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB7":
-			board.pB7.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB7.upgrade.equals("dame")) {
+				board.pB7.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB7.upgrade.equals("cavalier")) {
+				board.pB7.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB7.upgrade.equals("fou")) {
+				board.pB7.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB7.upgrade.equals("tour")) {
+				board.pB7.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB7.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		case "pB8":
-			board.pB8.DeplacerPion(board, x, y, x2, y2);
+			if (board.pB8.upgrade.equals("dame")) {
+				board.pB8.DeplacerDame(board, x, y, x2, y2);
+			}
+			else if (board.pB8.upgrade.equals("cavalier")) {
+				board.pB8.DeplacerCavalier(board, x, y, x2, y2);
+			}
+			else if (board.pB8.upgrade.equals("fou")) {
+				board.pB8.DeplacerFou(board, x, y, x2, y2);
+			}
+			else if (board.pB8.upgrade.equals("tour")) {
+				board.pB8.DeplacerTour(board, x, y, x2, y2);
+			}
+			else {
+				board.pB8.DeplacerPion(board, x, y, x2, y2);
+			}
 			break;
 		
 		}

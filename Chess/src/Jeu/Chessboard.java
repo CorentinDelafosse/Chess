@@ -43,17 +43,16 @@ public class Chessboard extends JPanel{
 	private Image imgRoiB;
 	Roi rB = new Roi("rB", 450, 715, true);
 	
-	private ImageIcon icoPionB;
-	private Image imgPionB;
-	Pion pB1 = new Pion("pB1", 95, 625, true);
-	Pion pB2 = new Pion("pB2", 185, 625, true);
-	Pion pB3 = new Pion("pB3", 275, 625, true);
-	Pion pB4 = new Pion("pB4", 360, 625, true);
-	Pion pB5 = new Pion("pB5", 450, 625, true);
-	Pion pB6 = new Pion("pB6", 540, 625, true);
-	Pion pB7 = new Pion("pB7", 630, 625, true);
-	Pion pB8 = new Pion("pB8", 720, 625, true);
-	
+	private ImageIcon icoPionB = new ImageIcon(getClass().getResource("/image/PionB.png"));
+	private Image imgPionB = this.icoPionB.getImage();;
+	Pion pB1 = new Pion("pB1", 95, 625, true, icoPionB, imgPionB);
+	Pion pB2 = new Pion("pB2", 185, 625, true, icoPionB, imgPionB);
+	Pion pB3 = new Pion("pB3", 275, 625, true, icoPionB, imgPionB);
+	Pion pB4 = new Pion("pB4", 360, 625, true, icoPionB, imgPionB);
+	Pion pB5 = new Pion("pB5", 450, 625, true, icoPionB, imgPionB);
+	Pion pB6 = new Pion("pB6", 540, 625, true, icoPionB, imgPionB);
+	Pion pB7 = new Pion("pB7", 630, 625, true, icoPionB, imgPionB);
+	Pion pB8 = new Pion("pB8", 720, 625, true, icoPionB, imgPionB);
 	
 	// pion Noir
 	private ImageIcon icoTourN;
@@ -79,17 +78,17 @@ public class Chessboard extends JPanel{
 	private ImageIcon icoRoiN;
 	private Image imgRoiN;
 	Roi rN = new Roi("rN", 450, 90, false);
-	
-	private ImageIcon icoPionN;
-	private Image imgPionN;
-	Pion pN1 = new Pion("pN1", 85, 180, false);
-	Pion pN2 = new Pion("pN2", 180, 180, false);
-	Pion pN3 = new Pion("pN3", 275, 180, false);
-	Pion pN4 = new Pion("pN4", 360, 180, false);
-	Pion pN5 = new Pion("pN5", 450, 180, false);
-	Pion pN6 = new Pion("pN6", 540, 180, false);
-	Pion pN7 = new Pion("pN7", 630, 180, false);
-	Pion pN8 = new Pion("pN8", 720, 180, false);
+
+	private ImageIcon icoPionN = new ImageIcon(getClass().getResource("/image/PionN.png"));
+	private Image imgPionN = this.icoPionN.getImage();;
+	Pion pN1 = new Pion("pN1", 85, 180, false, icoPionN, imgPionN);
+	Pion pN2 = new Pion("pN2", 180, 180, false, icoPionN, imgPionN);
+	Pion pN3 = new Pion("pN3", 275, 180, false, icoPionN, imgPionN);
+	Pion pN4 = new Pion("pN4", 360, 180, false, icoPionN, imgPionN);
+	Pion pN5 = new Pion("pN5", 450, 180, false, icoPionN, imgPionN);
+	Pion pN6 = new Pion("pN6", 540, 180, false, icoPionN, imgPionN);
+	Pion pN7 = new Pion("pN7", 630, 180, false, icoPionN, imgPionN);
+	Pion pN8 = new Pion("pN8", 720, 180, false, icoPionN, imgPionN);
 	
 	public Chessboard(){
 		
@@ -121,8 +120,7 @@ public class Chessboard extends JPanel{
 		board[1][5] = "pB6";
 		board[1][6] = "pB7";
 		board[1][7] = "pB8";
-		icoPionB = new ImageIcon(getClass().getResource("/image/PionB.png"));
-		imgPionB = this.icoPionB.getImage();
+
 		
 		
 		board[7][0] = "tN1";
@@ -151,8 +149,6 @@ public class Chessboard extends JPanel{
 		board[6][5] = "pN6";
 		board[6][6] = "pN7";
 		board[6][7] = "pN8";
-		icoPionN = new ImageIcon(getClass().getResource("/image/PionN.png"));
-		imgPionN = this.icoPionN.getImage();
 		
 		for (int i = 2; i < 6; i++) {
 			for (int j = 0; j<8; j++) {
@@ -187,14 +183,14 @@ public class Chessboard extends JPanel{
 		g2.drawImage(this.imgTourB, tB2.xTour, tB2.yTour,  null);
 		g2.drawImage(this.imgCavB, cB2.xCav, cB2.yCav,  null);
 		g2.drawImage(this.imgFouB, fB2.xFou, fB2.yFou,  null);
-		g2.drawImage(this.imgPionB, pB1.xPion, pB1.yPion,  null);
-		g2.drawImage(this.imgPionB, pB2.xPion, pB2.yPion,  null);
-		g2.drawImage(this.imgPionB, pB3.xPion, pB3.yPion,  null);
-		g2.drawImage(this.imgPionB, pB4.xPion, pB4.yPion,  null);
-		g2.drawImage(this.imgPionB, pB5.xPion, pB5.yPion,  null);
-		g2.drawImage(this.imgPionB, pB6.xPion, pB6.yPion,  null);
-		g2.drawImage(this.imgPionB, pB7.xPion, pB7.yPion,  null);
-		g2.drawImage(this.imgPionB, pB8.xPion, pB8.yPion,  null);
+		g2.drawImage(pB1.imgPion, pB1.xPion, pB1.yPion,  null);
+		g2.drawImage(pB2.imgPion, pB2.xPion, pB2.yPion,  null);
+		g2.drawImage(pB3.imgPion, pB3.xPion, pB3.yPion,  null);
+		g2.drawImage(pB4.imgPion, pB4.xPion, pB4.yPion,  null);
+		g2.drawImage(pB5.imgPion, pB5.xPion, pB5.yPion,  null);
+		g2.drawImage(pB6.imgPion, pB6.xPion, pB6.yPion,  null);
+		g2.drawImage(pB7.imgPion, pB7.xPion, pB7.yPion,  null);
+		g2.drawImage(pB8.imgPion, pB8.xPion, pB8.yPion,  null);
 		
 		// dessin des pions noirs
 		g2.drawImage(this.imgTourN, tN1.xTour, tN1.yTour,  null);
@@ -205,14 +201,14 @@ public class Chessboard extends JPanel{
 		g2.drawImage(this.imgTourN, tN2.xTour, tN2.yTour,  null);
 		g2.drawImage(this.imgCavN, cN2.xCav, cN2.yCav,  null);
 		g2.drawImage(this.imgFouN, fN2.xFou, fN2.yFou,  null);
-		g2.drawImage(this.imgPionN, pN1.xPion, pN1.yPion,  null);
-		g2.drawImage(this.imgPionN, pN2.xPion, pN2.yPion,  null);
-		g2.drawImage(this.imgPionN, pN3.xPion, pN3.yPion,  null);
-		g2.drawImage(this.imgPionN, pN4.xPion, pN4.yPion,  null);
-		g2.drawImage(this.imgPionN, pN5.xPion, pN5.yPion,  null);
-		g2.drawImage(this.imgPionN, pN6.xPion, pN6.yPion,  null);
-		g2.drawImage(this.imgPionN, pN7.xPion, pN7.yPion,  null);
-		g2.drawImage(this.imgPionN, pN8.xPion, pN8.yPion,  null);	
+		g2.drawImage(pN1.imgPion, pN1.xPion, pN1.yPion,  null);
+		g2.drawImage(pN2.imgPion, pN2.xPion, pN2.yPion,  null);
+		g2.drawImage(pN3.imgPion, pN3.xPion, pN3.yPion,  null);
+		g2.drawImage(pN4.imgPion, pN4.xPion, pN4.yPion,  null);
+		g2.drawImage(pN5.imgPion, pN5.xPion, pN5.yPion,  null);
+		g2.drawImage(pN6.imgPion, pN6.xPion, pN6.yPion,  null);
+		g2.drawImage(pN7.imgPion, pN7.xPion, pN7.yPion,  null);
+		g2.drawImage(pN8.imgPion, pN8.xPion, pN8.yPion,  null);	
 		
 	}
 	
@@ -336,7 +332,5 @@ public class Chessboard extends JPanel{
 		
 		return gagnant;
 	}
-	
-	
 	
 }
